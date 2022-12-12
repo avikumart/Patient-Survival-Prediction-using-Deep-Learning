@@ -5,6 +5,6 @@ Deep learning based modeling approach to train large dataset and predict patient
 
 **Source of the dataset:** [Click Here](https://journals.lww.com/ccmjournal/Citation/2019/01001/33__THE_GLOBAL_OPEN_SOURCE_SEVERITY_OF_ILLNESS.36.aspx)
 
-**🧭 Problem Statement:** The target feature is hospital_death which is a binary variable. The task is to classify this variable based on the other 84 features step-by-step by going through each day's task. The scoring metric is Accuracy/Area under ROC curve.
+**🧭 Problem Statement:** The target feature is hospital_death which is a binary variable. The task is to classify this variable based on the other 185 features step-by-step by going through each day's task. The scoring metric is Accuracy/Area under ROC curve.
 
 **Key challange:** Large dataset with over 190K rows and 186 columns.
