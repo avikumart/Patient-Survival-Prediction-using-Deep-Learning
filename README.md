@@ -7,4 +7,7 @@ Deep learning based modeling approach to train large dataset and predict patient
 
 **🧭 Problem Statement:** The target feature is hospital_death which is a binary variable. The task is to classify this variable based on the other 185 features step-by-step by going through each day's task. The scoring metric is Accuracy/Area under ROC curve.
 
-**Key challange:** Large dataset with over 90K rows and 186 columns.
+**Key challange:** 
+
+1. Large dataset with over 90K rows and 186 columns.
+2. Lack of significant  relations with target feature
