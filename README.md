@@ -10,4 +10,19 @@ Deep learning based modeling approach to train large dataset and predict patient
 **Key challange:** 
 
 1. Large dataset with over 90K rows and 186 columns.
-2. Lack of significant  relations with target feature
+2. Lack of significant relations with target feature
+
+### Steps taken to solve the problem:
+
+1) Handled Missing Values using MCAR techniques
+2) EDA of the dataset to find distributions and relations of features 
+3) Upsampling using SMOTE 
+4) Feature selection using chi2 statistics
+5) Baseline modeling using neural network - `Validation score - 50% AUC`
+6) Fine tuned neural network - `Validation score - 85% AUC`
+7) Explainable AI usign shap Kernel explainer
+
+### Results:
+
+- Sub-samplling features and reducing data improved the modeling metric score
+- Using Keras-Tuner validation AUC score improved to `85%` from `50%`
