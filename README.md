@@ -26,3 +26,5 @@ Deep learning based modeling approach to train large dataset and predict patient
 
 - Sub-samplling features and reducing data improved the modeling metric score
 - Using Keras-Tuner validation AUC score improved to `85%` from `50%`
+
+### Acknowledgement: TMLC Academy
