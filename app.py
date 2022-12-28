@@ -110,11 +110,14 @@ def main():
         # display on user interface
         if st.button("Predict"):
             if prediction > 0.5:
-                st.markdown("Patient will survive")
+                st.markdown("<h4 style='text-align: center; padding: 12px;color: #e3a740;'>Patient will survive</h4>",
+                        unsafe_allow_html = True)
             else:
-                st.markdown("Patient will not survive")
+                st.markdown("<h4 style='text-align: center; padding: 12px;color: #e3a740;'>Patient will not survive</h4>",
+                        unsafe_allow_html = True)
     
     with tab3:
+        st.write("Explination of prediction by model")
         shap.initjs()
         def f(X):
             return model.predict(np.array(output_values).reshape(1,-1)).flatten()
