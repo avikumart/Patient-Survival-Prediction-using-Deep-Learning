@@ -47,7 +47,12 @@ def model_predict(input_values):
 def main():
     tab1, tab2, tab3 = st.tabs(["Introduction","Prediction","Explainable AI (XAI)"])
     with tab1:
-        st.markdown("Introduction to the patient survival prediction app")
+        heading = '''
+            <div> 
+            <h1 style ="color:#f5be1b;text-align:center;padding:25px;">Introduction to the patient survival prediction app</h1> 
+            </div> 
+        '''
+        st.markdown(heading, unsafe_allow_html = True)
         
         st.markdown("""**🧾Description:** Getting a rapid understanding of the context of a patient’s
                     overall health has been particularly important during the COVID-19 pandemic as
@@ -68,6 +73,11 @@ def main():
         
         st.markdown("**Source of the dataset:** [Click Here](https://journals.lww.com/ccmjournal/Citation/2019/01001/33__THE_GLOBAL_OPEN_SOURCE_SEVERITY_OF_ILLNESS.36.aspx)")
         
+        st.write("Made with 🔥 By: Avi kumar Talaviya")
+        st.markdown("""Reach out to me on: [Twitter](https://twitter.com/avikumart_) |
+                [Linkedin](https://www.linkedin.com/in/avi-kumar-talaviya-739153147/) |
+                [Kaggle](https://www.kaggle.com/avikumart) 
+                    """)
     with tab2:
         age = st.number_input("Age of the patient", step=1)
         elective_surgery = st.number_input("Elective surgery", step=1)
