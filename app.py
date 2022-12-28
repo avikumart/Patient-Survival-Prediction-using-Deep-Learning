@@ -106,8 +106,8 @@ def main():
         def f(X):
             return model.predict(np.array(output_values).reshape(1,-1)).flatten()
         
-        explainer = shap.KernelExplainer(f, pd.Series(np.array(output_values)), index=features)
-        shap_value = explainer.shap_values(pd.Series(np.array(output_values)))
-        st.pyplot(shap.force_plot(explainer.expected_value, shap_value, pd.Series(np.array(output_values))))
+        explainer = shap.KernelExplainer(f, pd.Series(np.array(output_values), index=features))
+        shap_value = explainer.shap_values(pd.Series(np.array(output_values), index=features))
+        st.pyplot(shap.force_plot(explainer.expected_value, shap_value, pd.Series(np.array(output_values), index=features)))
         
         
