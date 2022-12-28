@@ -4,8 +4,10 @@ import numpy as np
 import sklearn 
 import joblib
 from tensorflow import keras
+import matplotlib
 import shap
 
+st.set_option('deprecation.showPyplotGlobalUse', False)
 
 st.set_page_config(page_title="Patient Survival Prediction App",
                 page_icon="🏥🩺", layout="wide")
