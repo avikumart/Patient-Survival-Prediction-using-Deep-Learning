@@ -5,6 +5,7 @@ import sklearn
 import joblib
 from tensorflow import keras
 import matplotlib
+from IPython import get_ipython
 import shap
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
