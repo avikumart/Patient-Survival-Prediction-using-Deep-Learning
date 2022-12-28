@@ -33,7 +33,7 @@ def standardization(input_features):
     transformed_input = encoder_function(input_features)
     input_features[2] = transformed_input[0]
     input_features[3] = transformed_input[1]
-    scaled_input = stds.transform(input_features.reshape(1,-1))
+    scaled_input = stds.transform(np.array(input_features).reshape(1,-1))
     return list(scaled_input.ravel())
 
 def model_predict(input_values):
