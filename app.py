@@ -110,4 +110,6 @@ def main():
         shap_value = explainer.shap_values(pd.Series(np.array(output_values), index=features))
         st.pyplot(shap.force_plot(explainer.expected_value, shap_value, pd.Series(np.array(output_values), index=features)))
         
+if __name__=="__main__":
+    main()
         
